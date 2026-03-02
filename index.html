@@ -528,21 +528,54 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
   margin-bottom:12px;
   font-size:15px;
 }
-
-/* RESPONSIVE */
+/* IMPROVED RESPONSIVE - 900px */
 @media(max-width:900px){
+
+  .hero-section{
+    padding:90px 6%;
+  }
+
   .hero-container{
     grid-template-columns:1fr;
+    gap:50px;
+    text-align:center;
   }
 
   .hero-left h1{
-    font-size:36px;
+    font-size:34px;
+  }
+
+  .hero-left p{
+    font-size:16px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+  }
+
+  .btn-primary,
+  .btn-outline{
+    margin-right:0;
+    width:220px;
+    text-align:center;
   }
 
   .hero-stats{
     flex-direction:column;
     gap:20px;
+    align-items:center;
   }
+
+  .hero-card{
+    margin:auto;
+    max-width:400px;
+  }
+
 }
 </style>
 <!-- ABOUT SECTION -->
@@ -766,8 +799,7 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
 
     <!-- RIGHT IMAGE -->
     <div class="platform-image">
-      <img src="Safe Travel Meal Kits Platform.jpeg
-" alt="Safe Travel Meal Kits Platform">
+      <img src="your-platform-image.png" alt="Safe Travel Meal Kits Platform">
     </div>
 
   </div>
@@ -1171,175 +1203,47 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
   line-height:1.7;
   opacity:0.95;
 }
+/* IMPROVED RESPONSIVE - 900px */
+@media(max-width:900px){
 
-/* Responsive */
-@media(max-width:768px){
-  .market-container h2{
-    font-size:28px;
+  .uk-market-section{
+    padding:80px 6%;
   }
-}
-</style>
-<!-- PLATFORM SECTION -->
-<section class="platform-section" id="platform">
 
-  <div class="platform-container">
+  .market-container{
+    max-width:100%;
+  }
 
-    <!-- LEFT CONTENT -->
-    <div class="platform-content">
-      <h2>The Safe Food Journey Platform</h2>
+  .market-container h2{
+    font-size:30px;
+  }
 
-      <p class="platform-subtitle">
-        An itinerary-aware, allergen-secure system built for modern travel.
-      </p>
+  .market-subtitle{
+    font-size:16px;
+    margin-bottom:40px;
+  }
 
-      <div class="platform-features">
+  .graph-box{
+    margin-bottom:40px;
+  }
 
-        <div class="feature-box">
-          <h4>✈️ Itinerary-Aware AI</h4>
-          <p>
-            Converts flight and hotel bookings into scheduled meal delivery
-            points across your entire journey.
-          </p>
-        </div>
+  .graph-box h3{
+    font-size:16px;
+  }
 
-        <div class="feature-box">
-          <h4>🥗 Multi-Allergen Profile Engine</h4>
-          <p>
-            Handles complex allergy combinations with severity-based controls
-            and intelligent substitution logic.
-          </p>
-        </div>
-
-        <div class="feature-box">
-          <h4>📍 GPS-Timed Delivery</h4>
-          <p>
-            Meals delivered precisely to airport landside zones,
-            hotel receptions, and transient travel locations.
-          </p>
-        </div>
-
-        <div class="feature-box">
-          <h4>🔐 QR Safety Passport</h4>
-          <p>
-            Each kit includes traceability summary, ingredient verification,
-            and kitchen sign-off for full transparency.
-          </p>
-        </div>
-
-      </div>
-
-      <a href="#contact" class="platform-btn">Request Platform Demo</a>
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="platform-image">
-      <img src="Safe Travel Meal Kits Platform." alt="Safe Travel Meal Kits Platform">
-    </div>
-
-  </div>
-
-</section>
-
-<style>
-.platform-section{
-  padding:120px 8%;
-  background:#1f4e79;
-  color:#ffffff;
-  font-family:'Segoe UI', sans-serif;
-}
-
-.platform-container{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:60px;
-  max-width:1300px;
-  margin:auto;
-}
-
-.platform-content{
-  flex:1;
-}
-
-.platform-content h2{
-  font-size:38px;
-  margin-bottom:20px;
-}
-
-.platform-subtitle{
-  font-size:18px;
-  margin-bottom:40px;
-  opacity:0.9;
-}
-
-.platform-features{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:25px;
-  margin-bottom:40px;
-}
-
-.feature-box{
-  background:rgba(255,255,255,0.08);
-  padding:20px;
-  border-radius:12px;
-  transition:0.3s;
-}
-
-.feature-box:hover{
-  background:rgba(255,255,255,0.15);
-  transform:translateY(-5px);
-}
-
-.feature-box h4{
-  margin-bottom:10px;
-  font-size:16px;
-}
-
-.feature-box p{
-  font-size:14px;
-  line-height:1.6;
-  opacity:0.9;
-}
-
-.platform-btn{
-  display:inline-block;
-  padding:14px 30px;
-  background:#ffffff;
-  color:#1f4e79;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.platform-btn:hover{
-  background:#e5e5e5;
-}
-
-/* IMAGE */
-.platform-image{
-  flex:1;
-  text-align:center;
-}
-
-.platform-image img{
-  width:100%;
-  max-width:500px;
-  border-radius:20px;
-  box-shadow:0 25px 50px rgba(0,0,0,0.3);
-}
-
-/* RESPONSIVE */
-@media(max-width:992px){
-  .platform-container{
-    flex-direction:column;
+  .bar{
+    height:38px;
+    font-size:13px;
+    padding:0 10px;
     text-align:center;
   }
 
-  .platform-features{
-    grid-template-columns:1fr;
+  .market-summary{
+    font-size:15px;
+    margin-top:40px;
+    padding:0 5px;
   }
+
 }
 </style>
 <!-- FOUNDER SECTION -->

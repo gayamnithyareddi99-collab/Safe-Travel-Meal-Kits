@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safe Travel Meal Kits</title>
+
+<style>
+
+/* ===== BRAND COLORS ===== */
+:root{
+  --navy:#0F2D4A;
+  --travel-blue:#1F4E79;
+  --accent:#2F80ED;
+  --white:#ffffff;
+  --soft:#F4F7FA;
+}
+
+body{
+  margin:0;
+  font-family:'Segoe UI', sans-serif;
+  background:var(--white);
+  color:#333;
+  scroll-behavior:smooth;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  background:var(--navy);
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
+}
+
+nav .logo{
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-size:14px;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:linear-gradient(135deg,var(--navy),var(--travel-blue));
+  color:white;
+  padding:140px 8%;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  max-width:750px;
+  margin:auto;
+  line-height:1.7;
+  opacity:0.9;
+}
+
+.hero-btn{
+  margin-top:40px;
+  display:inline-block;
+  padding:15px 35px;
+  background:var(--accent);
+  border-radius:40px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  background:white;
+  color:var(--navy);
+}
+
+/* ===== SECTION ===== */
+.section{
+  padding:120px 8%;
+}
+
+.section h2{
+  font-size:36px;
+  color:var(--navy);
+  margin-bottom:25px;
+}
+
+.section p{
+  max-width:800px;
+  line-height:1.7;
+}
+
+/* ===== FEATURES ===== */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+  margin-top:50px;
+}
+
+.feature-box{
+  background:var(--soft);
+  padding:35px;
+  border-radius:14px;
+}
+
+.feature-box h3{
+  color:var(--travel-blue);
+}
+
+/* ===== PRICING ===== */
+.pricing{
+  background:var(--navy);
+  color:white;
+  text-align:center;
+}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  margin-top:60px;
+}
+
+.price-card{
+  background:white;
+  color:var(--navy);
+  padding:45px;
+  border-radius:14px;
+}
+
+.price-card h3{
+  margin-bottom:15px;
+}
+
+.price{
+  font-size:36px;
+  font-weight:700;
+  margin:20px 0;
+}
+
+.price-btn{
+  background:var(--travel-blue);
+  color:white;
+  padding:12px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:20px;
+}
+
+/* ===== CONTACT ===== */
+.contact{
+  background:var(--travel-blue);
+  color:white;
+  text-align:center;
+  padding:120px 8%;
+}
+
+.contact button{
+  padding:15px 35px;
+  background:white;
+  border:none;
+  border-radius:40px;
+  color:var(--navy);
+  font-weight:600;
+  cursor:pointer;
+  margin-top:30px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .hero h1{
+    font-size:34px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">SAFE TRAVEL MEAL KITS</div>
+  <div>
+    <a href="#solution">Solution</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+<!-- NAVBAR -->
+<header class="navbar">
+
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      Safe Travel <span>Meal Kits</span>
+    </div>
+
+    <!-- MENU -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#platform">Platform</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
+
+    <!-- MOBILE MENU ICON -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+</header>
+
+<style>
+/* NAVBAR */
+.navbar{
+  background:#ffffff;
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  font-family:'Segoe UI', sans-serif;
+}
+
+.nav-container{
+  max-width:1300px;
+  margin:auto;
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* LOGO */
+.logo{
+  font-size:20px;
+  font-weight:700;
+  color:#1f4e79;
+}
+
+.logo span{
+  font-weight:500;
+}
+
+/* NAV LINKS */
+.nav-links{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#1f4e79;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#0e2f4f;
+}
+
+/* CONTACT BUTTON */
+.nav-btn{
+  background:#1f4e79;
+  color:#ffffff !important;
+  padding:8px 18px;
+  border-radius:20px;
+}
+
+.nav-btn:hover{
+  background:#163a5a;
+}
+
+/* HAMBURGER (hidden desktop) */
+.hamburger{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  gap:5px;
+}
+
+.hamburger span{
+  width:25px;
+  height:3px;
+  background:#1f4e79;
+  border-radius:3px;
+}
+
+/* MOBILE STYLE */
+@media(max-width:900px){
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:#ffffff;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:30px 0;
+    display:none;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .hamburger{
+    display:flex;
+  }
+
+}
+</style>
+
+<script>
+// TOGGLE MENU
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", ()=>{
+  navLinks.classList.toggle("active");
+});
+
+// AUTO CLOSE WHEN CLICKING A LINK (MOBILE)
+document.querySelectorAll(".nav-links a").forEach(link=>{
+  link.addEventListener("click", ()=>{
+    navLinks.classList.remove("active");
+  });
+});
+</script>
+<!-- HOME SECTION -->
+<section class="hero-section" id="home">
+
+  <div class="hero-container">
+
+    <div class="hero-left">
+      <h1>
+        Ensuring Hygienic Dining  
+        <span>On Every Journey</span>
+      </h1>
+
+      <p>
+        The UK’s first itinerary-aware, AI-powered travel meal assurance platform
+        designed for travellers with severe food allergies and strict dietary needs.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#about" class="btn-primary">Explore Platform</a>
+        <a href="#contact" class="btn-outline">Book Safe Meal</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <h3>20M+</h3>
+          <p>UK Allergy Sufferers</p>
+        </div>
+        <div>
+          <h3>£33.7Bn</h3>
+          <p>UK Inbound Travel Market</p>
+        </div>
+        <div>
+          <h3>AI + GPS</h3>
+          <p>Itinerary-Matched Delivery</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-card">
+        <h4>Safe Food Journey™</h4>
+        <ul>
+          <li>✔ Itinerary-Aware Planning</li>
+          <li>✔ Multi-Allergen Safety Engine</li>
+          <li>✔ GPS-Timed Hotel & Airport Delivery</li>
+          <li>✔ QR-Based Traceability Passport</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.hero-section{
+  background:#1f4e79;
+  padding:120px 8%;
+  color:#ffffff;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.hero-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+/* LEFT */
+.hero-left h1{
+  font-size:48px;
+  line-height:1.2;
+  margin-bottom:25px;
+}
+
+.hero-left h1 span{
+  display:block;
+  font-weight:700;
+  opacity:0.9;
+}
+
+.hero-left p{
+  font-size:18px;
+  line-height:1.7;
+  opacity:0.9;
+  margin-bottom:35px;
+  max-width:520px;
+}
+
+/* BUTTONS */
+.hero-buttons{
+  margin-bottom:40px;
+}
+
+.btn-primary{
+  background:#ffffff;
+  color:#1f4e79;
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  margin-right:15px;
+  transition:0.3s;
+}
+
+.btn-primary:hover{
+  background:#e6eef5;
+}
+
+.btn-outline{
+  border:2px solid #ffffff;
+  color:#ffffff;
+  padding:12px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn-outline:hover{
+  background:#ffffff;
+  color:#1f4e79;
+}
+
+/* STATS */
+.hero-stats{
+  display:flex;
+  gap:40px;
+  margin-top:20px;
+}
+
+.hero-stats h3{
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.hero-stats p{
+  font-size:14px;
+  opacity:0.8;
+}
+
+/* RIGHT CARD */
+.hero-card{
+  background:#ffffff;
+  color:#1f4e79;
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.2);
+}
+
+.hero-card h4{
+  margin-bottom:20px;
+  font-size:20px;
+}
+
+.hero-card ul{
+  list-style:none;
+  padding:0;
+}
+
+.hero-card ul li{
+  margin-bottom:12px;
+  font-size:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-container{
+    grid-template-columns:1fr;
+  }
+
+  .hero-left h1{
+    font-size:36px;
+  }
+
+  .hero-stats{
+    flex-direction:column;
+    gap:20px;
+  }
+}
+</style>
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+
+  <div class="about-container">
+
+    <div class="about-left">
+      <h2>About Safe Travel Meal Kits</h2>
+
+      <p class="about-intro">
+        Safe Travel Meal Kits is the UK’s first itinerary-aware, AI-powered
+        travel meal assurance platform designed specifically for travellers
+        with severe food allergies and strict dietary needs.
+      </p>
+
+      <p>
+        Unlike traditional meal kit services that focus on fixed home delivery,
+        our system converts confirmed travel itineraries into a fully coordinated
+        “Safe Food Journey” — delivering sealed, allergen-safe meals to transient
+        locations such as airports, hotels, and railway hubs.
+      </p>
+
+      <p>
+        Built on a tech-hospitality fusion model, the platform integrates
+        itinerary-driven scheduling, severity-aware multi-allergen logic,
+        GPS-timed delivery coordination, and QR-based traceability to create
+        an accountable end-to-end safety system.
+      </p>
+
+      <a href="#contact" class="about-btn">Learn More</a>
+    </div>
+
+    <div class="about-right">
+      
+      <div class="about-card">
+        <h4>Itinerary-Aware Intelligence</h4>
+        <p>
+          Converts flight and hotel confirmations into timed meal delivery
+          triggers across every leg of a journey.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h4>Allergen-Safe Engineering</h4>
+        <p>
+          Multi-allergen profile system with strict severity handling,
+          ensuring sealed and compliant meal preparation.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h4>Transient Location Delivery</h4>
+        <p>
+          GPS-timed dispatch to hotels, airports, and travel nodes —
+          designed specifically for high-pressure travel days.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h4>Traceability & Compliance</h4>
+        <p>
+          QR-based “Safety Passport” providing ingredient transparency,
+          kitchen sign-off, and chain-of-custody verification.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.about-section{
+  background:#ffffff;
+  padding:110px 8%;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.about-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+/* LEFT SIDE */
+.about-left h2{
+  font-size:38px;
+  color:#1f4e79;
+  margin-bottom:25px;
+}
+
+.about-intro{
+  font-size:18px;
+  font-weight:600;
+  color:#1f4e79;
+  margin-bottom:20px;
+  line-height:1.6;
+}
+
+.about-left p{
+  font-size:16px;
+  color:#444;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.about-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:14px 32px;
+  background:#1f4e79;
+  color:#ffffff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s ease;
+}
+
+.about-btn:hover{
+  background:#163a5b;
+}
+
+/* RIGHT SIDE */
+.about-right{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.about-card{
+  background:#f4f8fb;
+  padding:25px;
+  border-radius:12px;
+  border-top:4px solid #1f4e79;
+  transition:0.3s ease;
+}
+
+.about-card:hover{
+  transform:translateY(-5px);
+}
+
+.about-card h4{
+  color:#1f4e79;
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+.about-card p{
+  font-size:14px;
+  color:#555;
+  line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .about-container{
+    grid-template-columns:1fr;
+  }
+
+  .about-right{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+<!-- PLATFORM SECTION -->
+<section class="platform-section" id="platform">
+
+  <div class="platform-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="platform-content">
+      <h2>The Safe Food Journey Platform</h2>
+
+      <p class="platform-subtitle">
+        An itinerary-aware, allergen-secure system built for modern travel.
+      </p>
+
+      <div class="platform-features">
+
+        <div class="feature-box">
+          <h4>✈️ Itinerary-Aware AI</h4>
+          <p>
+            Converts flight and hotel bookings into scheduled meal delivery
+            points across your entire journey.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h4>🥗 Multi-Allergen Profile Engine</h4>
+          <p>
+            Handles complex allergy combinations with severity-based controls
+            and intelligent substitution logic.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h4>📍 GPS-Timed Delivery</h4>
+          <p>
+            Meals delivered precisely to airport landside zones,
+            hotel receptions, and transient travel locations.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h4>🔐 QR Safety Passport</h4>
+          <p>
+            Each kit includes traceability summary, ingredient verification,
+            and kitchen sign-off for full transparency.
+          </p>
+        </div>
+
+      </div>
+
+      <a href="#contact" class="platform-btn">Request Platform Demo</a>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="platform-image">
+      <img src="your-platform-image.png" alt="Safe Travel Meal Kits Platform">
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.platform-section{
+  padding:120px 8%;
+  background:#1f4e79;
+  color:#ffffff;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.platform-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  max-width:1300px;
+  margin:auto;
+}
+
+.platform-content{
+  flex:1;
+}
+
+.platform-content h2{
+  font-size:38px;
+  margin-bottom:20px;
+}
+
+.platform-subtitle{
+  font-size:18px;
+  margin-bottom:40px;
+  opacity:0.9;
+}
+
+.platform-features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+  margin-bottom:40px;
+}
+
+.feature-box{
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.feature-box:hover{
+  background:rgba(255,255,255,0.15);
+  transform:translateY(-5px);
+}
+
+.feature-box h4{
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+.feature-box p{
+  font-size:14px;
+  line-height:1.6;
+  opacity:0.9;
+}
+
+.platform-btn{
+  display:inline-block;
+  padding:14px 30px;
+  background:#ffffff;
+  color:#1f4e79;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.platform-btn:hover{
+  background:#e5e5e5;
+}
+
+/* IMAGE */
+.platform-image{
+  flex:1;
+  text-align:center;
+}
+
+.platform-image img{
+  width:100%;
+  max-width:500px;
+  border-radius:20px;
+  box-shadow:0 25px 50px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+  .platform-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .platform-features{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+<!-- PROCESS SECTION -->
+<section class="process-section" id="process">
+
+  <div class="process-container">
+
+    <h2 class="process-title">How The Safe Food Journey Works</h2>
+    <p class="process-subtitle">
+      A structured, itinerary-driven system ensuring allergen-safe meals 
+      are delivered exactly when and where travelers need them.
+    </p>
+
+    <div class="process-steps">
+
+      <!-- STEP 1 -->
+      <div class="process-box">
+        <div class="step-number">01</div>
+        <h4>Create Your Allergy Profile</h4>
+        <p>
+          Travelers enter detailed dietary requirements including severe
+          allergens, intolerances, religious restrictions, and
+          severity levels. The system builds a safety-first profile.
+        </p>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="process-box">
+        <div class="step-number">02</div>
+        <h4>Sync Your Travel Itinerary</h4>
+        <p>
+          Upload or connect your flight and hotel details. The platform
+          converts your journey into scheduled “safe meal points”
+          across departure, arrival, and hotel stay.
+        </p>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="process-box">
+        <div class="step-number">03</div>
+        <h4>Allergen-Safe Kitchen Preparation</h4>
+        <p>
+          Partner kitchens follow strict HACCP and multi-layer allergen
+          SOPs. Each meal is sealed, labeled, and verified before dispatch.
+        </p>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="process-box">
+        <div class="step-number">04</div>
+        <h4>GPS-Timed Delivery</h4>
+        <p>
+          Meals are delivered precisely to airport landside zones,
+          hotel receptions, or designated travel points based on
+          real-time arrival schedules.
+        </p>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="process-box">
+        <div class="step-number">05</div>
+        <h4>QR Safety Passport Verification</h4>
+        <p>
+          Each kit includes a QR traceability summary showing
+          ingredient verification, kitchen sign-off, and
+          chain-of-custody confirmation.
+        </p>
+      </div>
+
+      <!-- STEP 6 -->
+      <div class="process-box">
+        <div class="step-number">06</div>
+        <h4>Safe & Stress-Free Travel</h4>
+        <p>
+          Travelers enjoy their journey without last-minute food risk,
+          replacing uncertainty with a verified and structured
+          Safe Food Journey.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.process-section{
+  padding:120px 8%;
+  background:#ffffff;
+  font-family:'Segoe UI', sans-serif;
+  color:#1f4e79;
+}
+
+.process-container{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+.process-title{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.process-subtitle{
+  font-size:18px;
+  margin-bottom:70px;
+  color:#555;
+}
+
+/* GRID */
+.process-steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+/* BOX */
+.process-box{
+  background:#f8fbff;
+  padding:35px 25px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:0.3s;
+  text-align:left;
+}
+
+.process-box:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+.step-number{
+  font-size:28px;
+  font-weight:700;
+  color:#1f4e79;
+  margin-bottom:15px;
+}
+
+.process-box h4{
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+.process-box p{
+  font-size:14px;
+  line-height:1.6;
+  color:#444;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .process-title{
+    font-size:28px;
+  }
+
+  .process-subtitle{
+    font-size:16px;
+  }
+}
+</style>
+<!-- UK MARKET SECTION -->
+<section class="uk-market-section" id="uk-market">
+
+  <div class="market-container">
+
+    <h2>UK Market Opportunity</h2>
+    <p class="market-subtitle">
+      Positioned at the intersection of UK Tourism, Food-Tech, and Allergy Safety.
+    </p>
+
+    <!-- GRAPH 1 -->
+    <div class="graph-box">
+      <h3>UK Inbound Tourism Spending</h3>
+      <div class="bar-container">
+        <div class="bar tourism-bar">
+          <span>£33.7bn Annual Spending</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRAPH 2 -->
+    <div class="graph-box">
+      <h3>UK Allergy Population</h3>
+      <div class="bar-container">
+        <div class="bar allergy-bar">
+          <span>20 Million Allergy Sufferers</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRAPH 3 -->
+    <div class="graph-box">
+      <h3>Meal Kit Industry Growth</h3>
+      <div class="bar-container">
+        <div class="bar growth-bar">
+          <span>11.8% CAGR Growth Rate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MARKET SUMMARY -->
+    <div class="market-summary">
+      <p>
+        With over 43.4 million inbound visits annually and £33.7bn tourism spending,
+        the UK provides a strong launch ecosystem for Safe Travel Meal Kits.
+      </p>
+
+      <p>
+        Targeting even 1% of high-need travelers creates a projected
+        £100–200M niche opportunity in the UK alone.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.uk-market-section{
+  background:#1f4e79;
+  padding:100px 8%;
+  color:#ffffff;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.market-container{
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+}
+
+.market-container h2{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.market-subtitle{
+  font-size:18px;
+  margin-bottom:60px;
+  opacity:0.9;
+}
+
+/* Graph Box */
+.graph-box{
+  margin-bottom:50px;
+}
+
+.graph-box h3{
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+/* Bar Graph */
+.bar-container{
+  background:rgba(255,255,255,0.15);
+  border-radius:30px;
+  padding:8px;
+}
+
+.bar{
+  height:40px;
+  border-radius:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+  transition:0.8s ease;
+}
+
+/* Different Bar Widths */
+.tourism-bar{
+  width:95%;
+  background:#ffffff;
+  color:#1f4e79;
+}
+
+.allergy-bar{
+  width:70%;
+  background:#ffffff;
+  color:#1f4e79;
+}
+
+.growth-bar{
+  width:50%;
+  background:#ffffff;
+  color:#1f4e79;
+}
+
+/* Summary */
+.market-summary{
+  margin-top:60px;
+  font-size:17px;
+  line-height:1.7;
+  opacity:0.95;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .market-container h2{
+    font-size:28px;
+  }
+}
+</style>
+<!-- PLATFORM SECTION -->
+<section class="platform-section" id="platform">
+
+  <div class="platform-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="platform-content">
+      <h2>The Safe Food Journey Platform</h2>
+
+      <p class="platform-subtitle">
+        An itinerary-aware, allergen-secure system built for modern travel.
+      </p>
+
+      <div class="platform-features">
+
+        <div class="feature-box">
+          <h4>✈️ Itinerary-Aware AI</h4>
+          <p>
+            Converts flight and hotel bookings into scheduled meal delivery
+            points across your entire journey.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h4>🥗 Multi-Allergen Profile Engine</h4>
+          <p>
+            Handles complex allergy combinations with severity-based controls
+            and intelligent substitution logic.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h4>📍 GPS-Timed Delivery</h4>
+          <p>
+            Meals delivered precisely to airport landside zones,
+            hotel receptions, and transient travel locations.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h4>🔐 QR Safety Passport</h4>
+          <p>
+            Each kit includes traceability summary, ingredient verification,
+            and kitchen sign-off for full transparency.
+          </p>
+        </div>
+
+      </div>
+
+      <a href="#contact" class="platform-btn">Request Platform Demo</a>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="platform-image">
+      <img src="Safe Travel Meal Kits Platform." alt="Safe Travel Meal Kits Platform">
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.platform-section{
+  padding:120px 8%;
+  background:#1f4e79;
+  color:#ffffff;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.platform-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  max-width:1300px;
+  margin:auto;
+}
+
+.platform-content{
+  flex:1;
+}
+
+.platform-content h2{
+  font-size:38px;
+  margin-bottom:20px;
+}
+
+.platform-subtitle{
+  font-size:18px;
+  margin-bottom:40px;
+  opacity:0.9;
+}
+
+.platform-features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+  margin-bottom:40px;
+}
+
+.feature-box{
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.feature-box:hover{
+  background:rgba(255,255,255,0.15);
+  transform:translateY(-5px);
+}
+
+.feature-box h4{
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+.feature-box p{
+  font-size:14px;
+  line-height:1.6;
+  opacity:0.9;
+}
+
+.platform-btn{
+  display:inline-block;
+  padding:14px 30px;
+  background:#ffffff;
+  color:#1f4e79;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.platform-btn:hover{
+  background:#e5e5e5;
+}
+
+/* IMAGE */
+.platform-image{
+  flex:1;
+  text-align:center;
+}
+
+.platform-image img{
+  width:100%;
+  max-width:500px;
+  border-radius:20px;
+  box-shadow:0 25px 50px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+  .platform-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .platform-features{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+<!-- FOUNDER SECTION -->
+<section class="founder-section" id="founder">
+
+  <div class="founder-container">
+
+    <div class="founder-content">
+      
+      <h2>Founder & Vision Leadership</h2>
+
+      <h3>Hardik Nilesh Soni</h3>
+      <p class="role">Founder – Safe Travel Meal Kits</p>
+
+      <p class="description">
+        Safe Travel Meal Kits was founded with a clear mission: to eliminate food anxiety 
+        for travellers with severe allergies through a technology-first, compliance-driven 
+        operational model.
+      </p>
+
+      <p class="description">
+        The company is built on a fusion of high-standard hospitality operations and 
+        itinerary-aware AI logistics. Under the founder’s leadership, the platform integrates 
+        allergen-safe kitchen protocols, GPS-timed delivery coordination, and structured 
+        traceability systems to create a fully accountable “Safe Food Journey”.
+      </p>
+
+      <div class="leadership-points">
+        <div class="point">
+          <h4>Strategic Direction</h4>
+          <p>
+            Leading the vision to position Safe Travel Meal Kits as a UK-first 
+            travel meal assurance infrastructure.
+          </p>
+        </div>
+
+        <div class="point">
+          <h4>Operational Excellence</h4>
+          <p>
+            Designing kitchen SOP frameworks and scalable partner models 
+            aligned with UK food safety regulations.
+          </p>
+        </div>
+
+        <div class="point">
+          <h4>Innovation Oversight</h4>
+          <p>
+            Overseeing AI itinerary orchestration, transient-location delivery logic, 
+            and QR-based traceability integration.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.founder-section{
+  background:#ffffff;
+  padding:100px 8%;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.founder-container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.founder-content{
+  max-width:800px;
+}
+
+.founder-section h2{
+  font-size:38px;
+  color:#1f4e79;
+  margin-bottom:20px;
+}
+
+.founder-section h3{
+  font-size:26px;
+  margin-bottom:5px;
+  color:#1f4e79;
+}
+
+.role{
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:1px;
+  color:#555;
+  margin-bottom:30px;
+}
+
+.description{
+  font-size:16px;
+  line-height:1.7;
+  color:#444;
+  margin-bottom:20px;
+}
+
+.leadership-points{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.point{
+  border-left:4px solid #1f4e79;
+  padding-left:20px;
+}
+
+.point h4{
+  font-size:16px;
+  margin-bottom:8px;
+  color:#1f4e79;
+}
+
+.point p{
+  font-size:14px;
+  color:#555;
+  line-height:1.6;
+}
+</style>
+<!-- PRICING SECTION -->
+<section id="pricing" class="pricing-section">
+
+  <div class="pricing-container">
+    <h2>Pricing Plans</h2>
+    <p class="subtitle">
+      Transparent, safety-first pricing aligned with our UK pilot model.
+    </p>
+
+    <div class="pricing-grid">
+
+      <!-- BOX 1 -->
+      <div class="pricing-card">
+        <h3>Single Arrival Kit</h3>
+        <div class="price">£25</div>
+        <p class="desc">One sealed allergen-safe meal + snack pack delivered to hotel or airport.</p>
+
+        <ul>
+          <li>✔ GPS-Timed Delivery</li>
+          <li>✔ Allergen-Safe Packaging</li>
+          <li>✔ QR Safety Passport</li>
+          <li>✔ Hotel / Airport Handoff</li>
+        </ul>
+
+        <button onclick="scrollContact()">Book Now</button>
+      </div>
+
+      <!-- BOX 2 -->
+      <div class="pricing-card featured">
+        <div class="tag">Most Popular</div>
+        <h3>Daily Safety Pack</h3>
+        <div class="price">£45</div>
+        <p class="desc">Breakfast + Dinner replacements for high-risk travel days.</p>
+
+        <ul>
+          <li>✔ Multi-Meal Coverage</li>
+          <li>✔ Strict Allergen Controls</li>
+          <li>✔ Tamper-Evident Sealing</li>
+          <li>✔ Real-Time Scheduling</li>
+        </ul>
+
+        <button onclick="scrollContact()">Choose Plan</button>
+      </div>
+
+      <!-- BOX 3 -->
+      <div class="pricing-card">
+        <h3>Traveler Pro</h3>
+        <div class="price">£9.99<span>/month</span></div>
+        <p class="desc">Subscription for frequent travellers with priority scheduling.</p>
+
+        <ul>
+          <li>✔ Discounted Kit Pricing</li>
+          <li>✔ Multi-Profile Management</li>
+          <li>✔ Priority Preparation</li>
+          <li>✔ Faster Booking</li>
+        </ul>
+
+        <button onclick="scrollContact()">Subscribe</button>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<style>
+.pricing-section{
+  background:#1f4e79;
+  padding:100px 8%;
+  color:white;
+  font-family:'Segoe UI', sans-serif;
+  text-align:center;
+}
+
+.pricing-container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.pricing-section h2{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  opacity:0.85;
+  margin-bottom:60px;
+}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.pricing-card{
+  background:white;
+  color:#1f4e79;
+  padding:40px 30px;
+  border-radius:18px;
+  position:relative;
+  transition:0.3s;
+  box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.pricing-card:hover{
+  transform:translateY(-8px);
+}
+
+.pricing-card h3{
+  margin-bottom:15px;
+}
+
+.price{
+  font-size:38px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.price span{
+  font-size:16px;
+  font-weight:400;
+}
+
+.desc{
+  font-size:14px;
+  margin-bottom:25px;
+  color:#555;
+}
+
+.pricing-card ul{
+  list-style:none;
+  padding:0;
+  margin-bottom:30px;
+  text-align:left;
+}
+
+.pricing-card ul li{
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.pricing-card button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:30px;
+  background:#1f4e79;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.pricing-card button:hover{
+  background:#163a5a;
+}
+
+/* Featured */
+.featured{
+  transform:scale(1.05);
+}
+
+.tag{
+  position:absolute;
+  top:-12px;
+  right:20px;
+  background:#1f4e79;
+  color:white;
+  padding:5px 12px;
+  font-size:12px;
+  border-radius:20px;
+}
+</style>
+
+<script>
+function scrollContact(){
+  document.getElementById("contact").scrollIntoView({
+    behavior:"smooth"
+  });
+}
+</script>
+<!-- FAQ SECTION -->
+<section class="stm-faq-section" id="faq">
+
+  <div class="stm-faq-wrapper">
+    
+    <h2 class="stm-faq-title">Frequently Asked Questions</h2>
+    <p class="stm-faq-subtitle">
+      Everything you need to know about Safe Travel Meal Kits.
+    </p>
+
+    <div class="stm-faq-container">
+
+      <!-- Q1 -->
+      <div class="stm-faq-item">
+        <button class="stm-faq-question">
+          How does Safe Travel Meal Kits work?
+          <span>+</span>
+        </button>
+        <div class="stm-faq-answer">
+          Our system reads your travel itinerary and dietary profile, then schedules allergen-safe meal kits to be delivered at precise locations such as hotels or airport meeting points. Every kit is sealed, verified, and travel-timed.
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="stm-faq-item">
+        <button class="stm-faq-question">
+          How do you guarantee allergen safety?
+          <span>+</span>
+        </button>
+        <div class="stm-faq-answer">
+          We work only with vetted partner kitchens that follow strict allergen-control SOPs. Each meal includes full ingredient labeling and a QR-based safety passport for traceability.
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="stm-faq-item">
+        <button class="stm-faq-question">
+          Where can I receive my meal kit?
+          <span>+</span>
+        </button>
+        <div class="stm-faq-answer">
+          Meal kits can be delivered to hotel receptions, serviced apartments, airport landside meeting points, and selected rail stations — aligned with your arrival time.
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="stm-faq-item">
+        <button class="stm-faq-question">
+          What types of dietary needs do you support?
+          <span>+</span>
+        </button>
+        <div class="stm-faq-answer">
+          We support multiple allergies, coeliac requirements, vegetarian/vegan diets, religious restrictions, and severity-based exclusions including zero-trace policies.
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="stm-faq-item">
+        <button class="stm-faq-question">
+          Is this service available across the UK?
+          <span>+</span>
+        </button>
+        <div class="stm-faq-answer">
+          We are launching initially in Greater London, with expansion planned to Manchester, Birmingham, and Edinburgh travel hubs.
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="stm-faq-item">
+        <button class="stm-faq-question">
+          Who is this service designed for?
+          <span>+</span>
+        </button>
+        <div class="stm-faq-answer">
+          Safe Travel Meal Kits is built for travellers with severe allergies, families with dietary restrictions, corporate travellers, and institutions seeking duty-of-care compliance.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<style>
+/* ===== FAQ SECTION ===== */
+
+.stm-faq-section{
+  background:#ffffff;
+  padding:100px 8%;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.stm-faq-wrapper{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.stm-faq-title{
+  font-size:38px;
+  color:#0F2D4A;
+  margin-bottom:10px;
+}
+
+.stm-faq-subtitle{
+  color:#555;
+  margin-bottom:60px;
+  font-size:16px;
+}
+
+/* FAQ Container */
+.stm-faq-container{
+  text-align:left;
+}
+
+/* FAQ Item */
+.stm-faq-item{
+  border-bottom:1px solid #e5e5e5;
+  margin-bottom:15px;
+}
+
+/* Question Button */
+.stm-faq-question{
+  width:100%;
+  background:none;
+  border:none;
+  font-size:17px;
+  font-weight:600;
+  color:#0F2D4A;
+  padding:18px 0;
+  text-align:left;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.stm-faq-question span{
+  font-size:22px;
+  color:#2F80ED;
+  transition:0.3s;
+}
+
+/* Answer */
+.stm-faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:0.4s ease;
+  font-size:15px;
+  color:#444;
+  line-height:1.6;
+}
+
+/* Active State */
+.stm-faq-item.active .stm-faq-answer{
+  max-height:200px;
+  padding-bottom:15px;
+}
+
+.stm-faq-item.active .stm-faq-question span{
+  transform:rotate(45deg);
+}
+</style>
+
+<script>
+document.querySelectorAll(".stm-faq-question").forEach(button=>{
+  button.addEventListener("click",()=>{
+    const item = button.parentElement;
+    item.classList.toggle("active");
+  });
+});
+</script>
+<!-- CONTACT SECTION -->
+<section id="contact" class="stm-contact">
+
+  <div class="stm-contact-box">
+    
+    <h2>Start Your Safe Food Journey</h2>
+    
+    <p>
+      Schedule a pilot discussion or partnership call to explore
+      itinerary-matched, allergen-safe meal delivery for hotels,
+      airlines, and corporate travel teams across the UK.
+    </p>
+
+    <button id="stmEmailBtn">
+      Book Consultation
+    </button>
+
+    <div class="stm-trust">
+      GDPR Compliant • UK Food Safety Aligned • 24hr Response
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+/* ===== SAFE TRAVEL MEAL KITS CONTACT ===== */
+
+.stm-contact{
+  padding:120px 8%;
+  background:linear-gradient(135deg,#0F2D4A,#1F4E79);
+  text-align:center;
+  color:#ffffff;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.stm-contact-box{
+  max-width:750px;
+  margin:auto;
+}
+
+.stm-contact h2{
+  font-size:38px;
+  margin-bottom:20px;
+  font-weight:700;
+}
+
+.stm-contact p{
+  font-size:17px;
+  line-height:1.7;
+  opacity:0.9;
+  margin-bottom:40px;
+}
+
+#stmEmailBtn{
+  padding:16px 40px;
+  font-size:16px;
+  font-weight:600;
+  border:none;
+  border-radius:50px;
+  background:#ffffff;
+  color:#0F2D4A;
+  cursor:pointer;
+  transition:0.3s ease;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+#stmEmailBtn:hover{
+  background:#2F80ED;
+  color:#ffffff;
+  transform:translateY(-3px);
+}
+
+.stm-trust{
+  margin-top:35px;
+  font-size:14px;
+  opacity:0.85;
+  letter-spacing:0.5px;
+}
+</style>
+
+<script>
+document.getElementById("stmEmailBtn").addEventListener("click", function() {
+
+  const subject = "Safe Travel Meal Kits – Partnership / Pilot Discussion";
+
+  const body = `Hello Safe Travel Meal Kits Team,
+
+I would like to explore a pilot integration / partnership discussion.
+
+Organisation Name:
+Role:
+Travel Volume (Approx):
+Primary Use Case (Hotel / Airline / Corporate Travel / Personal):
+Allergen-Safety Requirements:
+
+Looking forward to discussing next steps.
+
+Kind regards,
+`;
+
+  window.location.href = 
+  `mailto:info@safetravelmealkits.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+});
+</script>
+
+<!-- FOOTER SECTION -->
+<footer class="stm-footer">
+
+  <div class="stm-footer-content">
+    
+    <div class="stm-footer-left">
+      © 2026 Safe Travel Meal Kits
+    </div>
+
+    <div class="stm-footer-center">
+      Ensuring Hygienic Dining on Every Journey
+    </div>
+
+    <div class="stm-footer-right">
+      <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag">
+      United Kingdom
+    </div>
+
+  </div>
+
+</footer>
+
+<style>
+/* ===== SAFE TRAVEL MEAL KITS FOOTER ===== */
+
+.stm-footer{
+  background:#0F2D4A;
+  color:#ffffff;
+  padding:18px 8%;
+  font-family:'Segoe UI', sans-serif;
+  font-size:13px;
+}
+
+.stm-footer-content{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.stm-footer-center{
+  opacity:0.8;
+}
+
+.stm-footer-right{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  opacity:0.9;
+}
+
+.stm-footer-right img{
+  width:18px;
+  height:auto;
+  border-radius:2px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .stm-footer-content{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</body>
+</html>
